@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header>
+    </header> <!--Allows display of background image-->
+
+    <main role="main">
+      <h4>Survey</h4>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="Audience jamming at a concert">
+          <div class="container">
+            <fieldset>
+              <legend>Band Survey</legend>
+              <form class="survey" role="form">
+                <p>Favorite band member:</p>
+                <label for="John">John</label>
+                <input type="radio" name="res" id="John">
+                <label for="Hazzard">Hazzard</label>
+                <input type="radio" name="res" id="Hazzard"> 
+                <label for="Bob">Bob</label>
+                <input type="radio" name="res" id="Bob"> 
+                <label for="Sally">Sally</label>
+                <input type="radio" name="res" id="Sally"> 
+                <br><br>
+
+                <label for="favorite-album">Favorite album:</label>
+                <br>
+                  <select id="favorite-album" name="select">
+                    <option value="1">A Day Of Old</option>
+                    <option value="2">Diamond Fireworks</option>
+                    <option value="3">Enjoy Your Desire</option>
+                    <option value="4">Finding My Shadow</option>
+                    <option value="5">Heroic Forever</option>
+                    <option value="6">Midnight Fires</option>
+                    <option value="7">Music Of My Life</option>
+                    <option value="8">Party For An Angel</option>
+                    <option value="9">Song For Yesterday</option>
+                    <option value="10">Street Of The Rider</option>
+                    <option value="11">This Is For You</option>
+                  </select>
+                  <br><br>
+
+
+                <label for="favorite-song">Favorite song:</label>
+                <br>
+                <textarea id="favorite-song"></textarea>
+              </form>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <h4>Newsletter</h4>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="Guitar and drummer playing on stage">
+            <div class="container">
+              <fieldset>
+                <legend>Newsletter Sign Up</legend>
+                <form class="newsletter" role="form">
+                  <div class="flex-newsletter">
+                    <label for="name">Name:</label>
+                    <input id="name" type ="text" name="textfield">
+                    <label for="email">Email:</label>
+                    <input id="email" type ="email" name="textfield">
+                    <label for="retype-email">Retype Email:</label>
+                    <input id="retype-email" type ="email" name="textfield">
+                  </div>
+                    <label for="submit-button"></label>
+                    <button id="submit-button" type="submit" aria-describedby="hint">Sign Up</button>
+                    <p id="hint">Click the Sign Up button to add your email to our mailing list!</p>
+                </form>
+              </fieldset>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul class="social-menu">
+        <li><a href="https://twitter.com/Twitter" class="social twitter">Twitter</a></li>
+        <li><a href="https://www.youtube.com/" class="social youtube">You Tube</a></li>
+        <li><a href="http://www.spotify.com" class="social spotify">Spotify</a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

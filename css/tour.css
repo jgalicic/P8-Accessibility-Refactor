@@ -1,0 +1,22 @@
+/* Tour page styles */
+
+h4 {
+  font-size: 2em;
+  margin: 0px 0 20px 0;
+}
+
+.pick{
+  width: 40px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid white;
+  }
+
+tr:nth-child(even) {
+  color: #6eaa96;
+  background-color: #363436;
+}
