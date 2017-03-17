@@ -56,13 +56,20 @@ textarea:focus {
   height: 40px;
   margin: 15px 0;
   font-size: 1em;
-  color: white;
+  color: #2d2b30;
   background-color: #5ea18b;
+  font-weight: bold;
   border: none;
 }
 
 #hint {
   margin: 0;
+}
+
+.form-title legend {
+  color: #5ea18b;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Styles for larger screens */

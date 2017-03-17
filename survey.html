@@ -19,7 +19,9 @@
     </nav>
 
     <header>
-    </header> <!--Allows display of background image-->
+        <h1>ACCESSIBLE FROG</h1>
+        <h2>we make awesome music</h2>
+    </header>
 
     <main role="main">
       <h4>Survey</h4>
@@ -27,9 +29,9 @@
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="Audience jamming at a concert">
           <div class="container">
-            <fieldset>
-              <legend style="color:#5ea18b">Band Survey</legend>
-              <form class="survey" role="form">
+            <form class="survey" role="form">
+             <fieldset class="form-title">
+              <legend>Band Survey</legend>
                 <p>Favorite band member:</p>
                 <label for="John">John</label>
                 <input type="radio" name="res" id="John">
@@ -62,8 +64,8 @@
                 <label for="favorite-song">Favorite song:</label>
                 <br>
                 <textarea id="favorite-song"></textarea>
-              </form>
-            </fieldset>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>
@@ -72,9 +74,9 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="Guitar and drummer playing on stage">
             <div class="container">
-              <fieldset>
-                <legend style="color:#5ea18b">Newsletter Sign Up</legend>
-                <form class="newsletter" role="form">
+              <form class="newsletter" role="form">
+                <fieldset class="form-title">
+                  <legend>Newsletter Sign Up</legend>
                   <div class="flex-newsletter">
                     <label for="name">Name:</label>
                     <input id="name" type ="text" name="textfield">
@@ -86,8 +88,8 @@
                     <label for="submit-button"></label>
                     <button id="submit-button" type="submit" aria-describedby="hint">Sign Up</button>
                     <p id="hint">Click the Sign Up button to add your email to our mailing list!</p>
-                </form>
-              </fieldset>
+                </fieldset>
+              </form>
             </div>
         </div>
       </div>
